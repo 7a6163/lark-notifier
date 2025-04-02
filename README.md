@@ -33,18 +33,18 @@ docker pull ghcr.io/7a6163/lark-notifier:latest
 
 ```bash
 # Basic usage
-lark-notifier --webhook-url "https://open.feishu.cn/open-apis/bot/v2/hook/your-webhook" \
+lark-notifier --webhook-url "https://open.larksuite.com/open-apis/bot/v2/hook/your-webhook" \
               --title "Notification Title" \
               --content "This is a notification message"
 
 # With secret for signed messages
-lark-notifier --webhook-url "https://open.feishu.cn/open-apis/bot/v2/hook/your-webhook" \
+lark-notifier --webhook-url "https://open.larksuite.com/open-apis/bot/v2/hook/your-webhook" \
               --secret "your-secret" \
               --title "Notification Title" \
               --content "This is a notification message"
 
 # With keyword highlighting
-lark-notifier --webhook-url "https://open.feishu.cn/open-apis/bot/v2/hook/your-webhook" \
+lark-notifier --webhook-url "https://open.larksuite.com/open-apis/bot/v2/hook/your-webhook" \
               --title "Notification Title" \
               --content "This is a notification with highlighted keywords" \
               --keywords "notification,highlighted"
@@ -53,7 +53,7 @@ lark-notifier --webhook-url "https://open.feishu.cn/open-apis/bot/v2/hook/your-w
 ### Docker
 
 ```bash
-docker run -e LARK_WEBHOOK_URL="https://open.feishu.cn/open-apis/bot/v2/hook/your-webhook" \
+docker run -e LARK_WEBHOOK_URL="https://open.larksuite.com/open-apis/bot/v2/hook/your-webhook" \
            -e LARK_SECRET="your-secret" \
            7a6163/lark-notifier \
            --title "Notification Title" \
