@@ -4,12 +4,9 @@ on:
   push:
     branches: [ "main" ]
     tags: [ 'v*' ]
-  pull_request:
-    branches: [ "main" ]
 
 env:
   REGISTRY_GHCR: ghcr.io
-  REGISTRY_DOCKERHUB: docker.io
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
