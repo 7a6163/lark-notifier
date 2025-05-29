@@ -14,6 +14,6 @@ FROM gcr.io/distroless/cc-debian12
 ENV LARK_WEBHOOK_URL ''
 ENV LARK_SECRET ''
 
-COPY --from=builder /usr/src/lark-notifier/target/release/lark-notifier /usr/local/bin/lark-notifier
+COPY --from=builder /usr/src/lark-notifier/target/release/lark-notifier /lark-notifier
 
-ENTRYPOINT ["/usr/local/bin/lark-notifier"]
+ENTRYPOINT ["./lark-notifier"]
